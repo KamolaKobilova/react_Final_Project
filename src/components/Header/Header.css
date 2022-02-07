@@ -1,0 +1,40 @@
+body{
+    background-image: url(../../assets/BG.png);
+    background-repeat: no-repeat;
+}
+ .nav_ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    list-style: none;
+    margin-right: 150px;
+    margin-top: 37px;
+   
+}
+.nav_ul a {
+    margin-right: 45px;
+    font-size: 18px;
+    width: 47;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-family:'sans-serif';
+}
+.nav_ul button{
+    width: 160px;
+    height: 56px;
+    border-radius: 4px;
+    margin-top: -17px;
+    background-color: #FFC814;
+    border-color: #FFC814;
+    color: #1F3347;
+
+}
+.explore {
+    font-size: 18px;
+    color: #FFFFFF;
+    position: absolute;
+    top: -5px;
+    left: 50px;
+    
+}

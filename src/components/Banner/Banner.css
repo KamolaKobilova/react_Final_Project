@@ -1,0 +1,33 @@
+.body h2 {
+    font-size: 64px;
+    font-weight: 600;
+    color: #FFFFFF;
+    position: absolute;
+    top: 187px;
+    left: 300px;
+}
+.text {
+    position: absolute;
+    left: 300px;
+    top: 450px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #FFFFFF;
+    margin-top: 17px;
+    font-family: 'serif';
+}
+.bt {
+    width: 160px;
+    height: 56px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.yellow {
+    background: #FFC814;
+    border-color: #FFC814;
+    margin-right: 17px;
+
+}
+.white {
+    border-color: #FFFFFF;
+}
