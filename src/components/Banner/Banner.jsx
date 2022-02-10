@@ -32,7 +32,21 @@ customize  continually.</h4> <br />
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        ...
+         <div className="main">
+            <div className="ul">
+              <button className="ul_item"><a href="#hotel">Hotel</a></button>
+              <button className="ul_item"><a href="#flight">Flight</a></button>
+              <button className="ul_item"><a href="#car">Car</a></button>
+              <button className="ul_item"><a href="#ship">Ship</a></button>
+            </div>
+            <section id="hotel">
+              <label htmlFor="input">fgdf</label>
+               <input type="text" />
+              <label htmlFor="input">fgdf</label>
+               <input type="text" />
+
+            </section>
+         </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

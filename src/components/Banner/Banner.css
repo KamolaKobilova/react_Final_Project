@@ -31,3 +31,18 @@
 .white {
     border-color: #FFFFFF;
 }
+
+.ul_item a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+.ul_item {
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(153, 96, 207);
+    margin-bottom: 10px;
+    margin-right: 6px;
+    
+}
