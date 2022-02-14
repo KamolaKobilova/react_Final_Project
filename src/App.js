@@ -6,12 +6,26 @@ import More from './components/More/More';
 
 
 function App() {
+  const contacts = [
+    {
+      id: "1",
+      name: "Kamola",
+      surName: "Kobilova"
+    },
+    {
+      id: "2",
+      name: "Kamola",
+      surName: "Qobilova"
+    }
+
+  ]
+
   return (
     <div>
       <BrowserRouter>
         <Header/>
         <Banner/>
-        
+        <More contacts={contacts} />
       </BrowserRouter>
       
     </div>
