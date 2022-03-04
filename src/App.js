@@ -1,6 +1,7 @@
-import React from 'react';
+import React, {useState ,useEffect} from 'react';
 import {BrowserRouter, Routes,Route} from 'react-router-dom';
 import { CssBaseline, Grid } from '@material-ui/core';
+import { getPlacesData } from './api';
 // import  Header  from './components/Header/Header';
 // import Banner from './components/Banner/Banner';
 // import More from './components/More/More';
@@ -10,6 +11,15 @@ import Map from './components/Map/Map';
 import PlaceDetails from './components/PlaceDetails/PlaceDetails';
 
 function App() {
+  const [places, setPlaces] = useState([])
+ useEffect(()=> {
+     getPlacesData()
+      .then((data) => {
+        console.log(data );
+        setPlaces(data)
+      })
+ }, [ ])
+
   return (
     <div>
    <BrowserRouter>
