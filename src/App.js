@@ -5,7 +5,7 @@ import { getPlacesData } from './api';
 // import  Header  from './components/Header/Header';
 // import Banner from './components/Banner/Banner';
 // import More from './components/More/More';
-import Header_2 from './components/Header_2/Header_2';
+import HeaderSecond from './components/HeaderSecond/HeaderSecond';
 import List from './components/List/List';
 import Map from './components/Map/Map';
 import PlaceDetails from './components/PlaceDetails/PlaceDetails';
@@ -35,7 +35,7 @@ function App() {
       <Banner/>
       <More/>  */}
        <CssBaseline/>
-          <Header_2/>
+          <HeaderSecond/>
         <Grid container spacing={3} style={{width: '100%'}}>
           <Grid item xs={12} md={4}> 
              <List places={places}/>
