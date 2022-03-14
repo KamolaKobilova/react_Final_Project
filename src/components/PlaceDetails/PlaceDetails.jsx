@@ -6,7 +6,7 @@ import Rating from '@material-ui/lab/Rating';
 
 import useStyles from './style.js';
  
-const   PlaceDetails = ({place }) => {
+const   PlaceDetails = ({place}) => {
  const classes = useStyles();
  
   return (

@@ -1,14 +1,15 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect, createRef} from 'react';
 import {CircularProgress, Grid,Typography, InputLabel, MenuItem, FormControl, Select} from '@material-ui/core';
 
 import useStyles from './style';
 import PlaceDetails from '../PlaceDetails/PlaceDetails'
 
 
-function List({}) {
+const List = ({ childClicked}) =>  {
   const classes = useStyles();
   const [type, setType] = useState('restaurant');
   const [rating, setRating] = useState('');
+   console.log({childClicked});
   const places = [
     {name: 'Cool Place'},
     {name: 'Best Bear'},

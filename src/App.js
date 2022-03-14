@@ -12,6 +12,8 @@ import Map from "./components/Map/Map";
 
 function App() {
   const [places, setPlaces] = useState([]);
+  const [childClicked, setChildClicked] = useState(null)
+
   const [coordinates, setCoordinates] = useState({});
   const [bounds, setBounds] = useState({});
 
@@ -42,6 +44,7 @@ function App() {
           <Grid item xs={12} md={4}>
             <List 
                places={places} 
+               childClicked={childClicked}
             />
           </Grid>
           <Grid item xs={12} md={8}>
@@ -50,6 +53,7 @@ function App() {
               setBounds={setBounds}
               coordinates={coordinates}
               places={places}
+              setChildClicked={setChildClicked}
             />
           </Grid>
         </Grid>
