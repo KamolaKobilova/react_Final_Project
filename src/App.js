@@ -16,6 +16,8 @@ function App() {
 
   const [coordinates, setCoordinates] = useState({});
   const [bounds, setBounds] = useState({});
+  const [type, setType] = useState('restaurant');
+  const [rating, setRating] = useState('');
 
   useEffect(() => {
     navigator.geolocation.getCurrentPosition(
@@ -26,11 +28,11 @@ function App() {
   }, []);
 
   useEffect(() => {
-    getPlacesData(bounds.sw, bounds.ne).then((data) => {
+    getPlacesData(type, bounds.sw, bounds.ne).then((data) => {
       console.log(data, "data");
       setPlaces(data);
     });
-  }, [coordinates, bounds]);
+  }, [type,coordinates, bounds]);
 
   return (
     <div>
@@ -54,6 +56,10 @@ function App() {
               coordinates={coordinates}
               places={places}
               setChildClicked={setChildClicked}
+              type={type}
+              setType={setType}
+              rating={rating}
+              setRating={setRating }
             />
           </Grid>
         </Grid>
